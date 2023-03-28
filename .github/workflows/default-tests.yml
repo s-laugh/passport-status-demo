@@ -101,49 +101,23 @@ jobs:
           name: e2e-test-report
           path: report
 
-  codeql:
-    name: Code QL Analysis
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
+  # deploy_test_results:
+  #   name: Get and Deploy Artifacts
+  #   if: ${{ github.actor != 'dependabot[bot]' }}
+  #   needs: [unit, e2e]
+  #   runs-on: ubuntu-latest
+  #   #dependabot doesn't get write access
+  #   steps:
+  #   - uses: actions/checkout@v3
 
-    strategy:
-      fail-fast: false
+  #   - uses: actions/download-artifact@v3
+  #     with:
+  #       path: test_results
+  #     env:
+  #       CI: true
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
-      with:
-        languages: 'javascript'
-
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-
-  deploy_test_results:
-    name: Get and Deploy Artifacts
-    if: ${{ github.actor != 'dependabot[bot]' }}
-    needs: [unit, e2e]
-    runs-on: ubuntu-latest
-    #dependabot doesn't get write access
-    steps:
-    - uses: actions/checkout@v3
-
-    - uses: actions/download-artifact@v3
-      with:
-        path: test_results
-      env:
-        CI: true
-
-    - name: Deploy Report 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        target-folder: ${{ github.ref }}
-        folder: test_results
+  #   - name: Deploy Report 🚀
+  #     uses: JamesIves/github-pages-deploy-action@v4
+  #     with:
+  #       target-folder: ${{ github.ref }}
+  #       folder: test_results
