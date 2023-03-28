@@ -8,19 +8,19 @@ This application is not released yet.
 
 This project uses
 
-- [Next.js](https://nextjs.org/) ![Next JS Version](https://img.shields.io/github/package-json/dependency-version/DTS-STN/passport-status/next)
-- [Tailwind CSS](https://tailwindcss.com/) ![Tailwind CSS Version](https://img.shields.io/github/package-json/dependency-version/DTS-STN/passport-status/dev/tailwindcss)
-- [Jest](https://jestjs.io/) for unit testing ![Jest Version (dev dependancy)](https://img.shields.io/github/package-json/dependency-version/DTS-STN/passport-status/dev/jest)
-- [Cypress](https://www.cypress.io/) for end-to-end testing. ![Cypress Version (dev dependancy)](https://img.shields.io/github/package-json/dependency-version/DTS-STN/passport-status/dev/cypress)
+- [Next.js](https://nextjs.org/) ![Next JS Version](https://img.shields.io/github/package-json/dependency-version/s-laugh/passport-status-demo/next)
+- [Tailwind CSS](https://tailwindcss.com/) ![Tailwind CSS Version](https://img.shields.io/github/package-json/dependency-version/s-laugh/passport-status-demo/dev/tailwindcss)
+- [Jest](https://jestjs.io/) for unit testing ![Jest Version (dev dependancy)](https://img.shields.io/github/package-json/dependency-version/s-laugh/passport-status-demo/dev/jest)
+- [Cypress](https://www.cypress.io/) for end-to-end testing. ![Cypress Version (dev dependancy)](https://img.shields.io/github/package-json/dependency-version/s-laugh/passport-status-demo/dev/cypress)
 
 ## Test reports for Main 👩‍🔬 🧪
 
-![Default Tests Workflow Status](https://github.com/DTS-STN/passport-status/actions/workflows/default-tests.yml/badge.svg?branch=main)
+![Default Tests Workflow Status](https://github.com/s-laugh/passport-status-demo/actions/workflows/default-tests.yml/badge.svg?branch=main)
 
-![Line Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Line%20Coverage&query=%24.total.lines.pct&suffix=%25&url=https%3A%2F%2Fdts-stn.github.io%2Fpassport-status%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
-![Statements Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Statement%20Coverage&query=%24.total.statements.pct&suffix=%25&url=https%3A%2F%2Fdts-stn.github.io%2Fpassport-status%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
-![Function Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Function%20Coverage&query=%24.total.functions.pct&suffix=%25&url=https%3A%2F%2Fdts-stn.github.io%2Fpassport-status%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
-![Branch Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Branch%20Coverage&query=%24.total.branches.pct&suffix=%25&url=https%3A%2F%2Fdts-stn.github.io%2Fpassport-status%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
+![Line Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Line%20Coverage&query=%24.total.lines.pct&suffix=%25&url=https%3A%2F%2Fs-laugh.github.io%2Fpassport-status-demo%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
+![Statements Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Statement%20Coverage&query=%24.total.statements.pct&suffix=%25&url=https%3A%2F%2Fs-laugh.github.io%2Fpassport-status-demo%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
+![Function Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Function%20Coverage&query=%24.total.functions.pct&suffix=%25&url=https%3A%2F%2Fs-laugh.github.io%2Fpassport-status-demo%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
+![Branch Coverage Badge](https://img.shields.io/badge/dynamic/json?label=Branch%20Coverage&query=%24.total.branches.pct&suffix=%25&url=https%3A%2F%2Fs-laugh.github.io%2Fpassport-status-demo%2Frefs%2Fheads%2Fmain%2Funit-test-results%2Fcoverage-summary.json)
 
 ## Getting Started
 
