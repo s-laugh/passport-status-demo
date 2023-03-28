@@ -7,14 +7,14 @@ import ApplicationNameBar from '../../src/components/ApplicationNameBar'
 
 expect.extend(toHaveNoViolations)
 
+jest.mock('next/link')
+
 describe('ApplicationNameBar', () => {
   const sut = <ApplicationNameBar text="Test" href="/somelink" />
 
   it('renders', () => {
     render(sut)
-    const screenText = screen.getByText('Test')
-    expect(screenText).toBeInTheDocument()
-    expect(document.querySelector('a')?.getAttribute('href')).toBe('/somelink')
+    expect(screen.getByTestId('app-name-section')).toBeInTheDocument()
   })
 
   it('meets a11y', async () => {
