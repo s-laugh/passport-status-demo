@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 
 import { axe, toHaveNoViolations } from 'jest-axe'
 
@@ -18,6 +18,7 @@ describe('LinkButton', () => {
 
   it('is meets a11y', async () => {
     const { container } = render(sut)
+    await waitFor(() => screen.getByText('text'))
     const results = await axe(container)
     expect(results).toHaveNoViolations()
   })
